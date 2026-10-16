@@ -1,5 +1,5 @@
 name: bin-installer
-version: 0.1.6
+version: 0.1.7
 
 description: |
   Builds and installs compilable Crystal projects from a local directory
@@ -18,7 +18,7 @@ license: MIT
 development_dependencies:
   ameba:
     github: crystal-ameba/ameba
-    version: "~> 1.6"
+    version: "~> 1.7"
 
 targets:
   bin-installer:

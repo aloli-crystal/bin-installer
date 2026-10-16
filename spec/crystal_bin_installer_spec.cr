@@ -96,10 +96,10 @@ describe BinInstaller::Config do
         config = BinInstaller::Config.load(tmp)
         config.dir.should eq("/tmp/src")
         config.dest.should eq("/tmp/bin")
-        config.release.should eq(false)
-        config.fetch.should eq(false)
-        config.force.should eq(true)
-        config.link.should eq(true)
+        config.release.should be_false
+        config.fetch.should be_false
+        config.force.should be_true
+        config.link.should be_true
         config.skip.should eq(%w[alpha beta])
       ensure
         File.delete(tmp) if File.exists?(tmp)
